@@ -47,4 +47,20 @@ const areaCirculo = (radio) => Math.PI * Math.pow(radio,2);
 // console.log(`El área del circulo es: ${areaCirculo(radioCirculo, pi).toFixed(2)}cm^2`);
 
 
+//Aquí interactuamos con el HTML
+const calcularPerimetroCuadrado = () => {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+};
+calcularAreaCuadrado = () => {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+    
+    const area = areaCuadrada(value);
+    alert(area);
+}
+
 console.groupEnd();
