@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso Práctico de JavaScript Platzi</title>
+    <style>
+        form {
+            margin: 0 auto;
+            width: 80%;
+        }
+        form label {
+            width: 50%;
+        }
+        form input {
+            text-align: center;
+            border: 2px solid grey;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            width: 60px;
+            border-radius: 15px;
+            outline: none;
+        }
+        form button {
+            padding: 10px;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+        form button:hover {
+            border: 2px solid #48ff00;
+        }
+
+        .container_triangle-inputs{
+            margin: 0 auto;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,6 +55,25 @@
                 Calcular el perímetro
             </button>
             <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
+        <h2>Calcula el área y perímetro de un triangulo</h2>
+        <form action="">
+            <div class="container_triangle-inputs">
+                <label for="">Lado 1</label>
+                <input type="number" id="lado1Triangulo">
+                <label for="">Lado 2</label>
+                <input type="number" id="lado2Triangulo">
+                <label for="">Base</label>
+                <input type="number" id="baseTriangulo">
+                <label for="">Altura</label>
+                <input type="number" id="alturaTriangulo">
+            </div>
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
                 Calcular el área
             </button>
         </form>
