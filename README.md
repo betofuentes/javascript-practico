@@ -15,3 +15,10 @@
 - Segundo paso: implementar las fórmulas en JavaScript
 - Tercer paso: crear funciones
 - Cuarto pas: Integrar JavaScript con HTML 
+
+## Taller #3: Porcentajes y descuentos
+
+- Primer paso: definir las fórmulas
+- Segundo paso: implementar las fórmulas en JavaScript
+- Tercer paso: crear funciones
+- Cuarto pas: Integrar JavaScript con HTML 
