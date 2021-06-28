@@ -27,4 +27,18 @@ medianaSalarios = (lista) => {
     }
 }
 
-console.log(medianaSalarios(salariosColSorted));
+
+// función que calcula la mediana del top 10% de salarios.
+const spliceStart = (salariosColSorted.length * (90) / 100);
+const spliceCount = salariosColSorted.length - spliceStart;
+
+const salariosColTop10 = salariosColSorted.splice(spliceStart,spliceCount);
+
+const medianaTop10Col = medianaSalarios(salariosColTop10);
+const medianaGeneralCol = medianaSalarios(salariosColSorted);
+
+console.log({
+    medianaGeneralCol,
+    medianaTop10Col,
+})
+
